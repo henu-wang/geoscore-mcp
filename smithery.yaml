@@ -1,0 +1,31 @@
+name: geoscore-mcp
+displayName: GEOScore - AI Search Optimization
+description: Scan websites for AI search (GEO) readiness. Get scores, generate llms.txt, Schema.org fixes, meta tag optimizations, and implementation guides.
+category: seo
+tags:
+  - geo
+  - seo
+  - ai-search
+  - llms-txt
+  - schema-org
+  - optimization
+icon: https://geoscoreai.com/favicon.ico
+homepage: https://geoscoreai.com
+repository: https://github.com/geoscoreai/geoscore-mcp
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      GEOSCORE_API_KEY:
+        type: string
+        description: "GEOScore API key for Pro features (optional). Get one free at https://geoscoreai.com/api-keys"
+    required: []
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "geoscore-mcp"],
+      env: {
+        GEOSCORE_API_KEY: config.GEOSCORE_API_KEY || ""
+      }
+    })

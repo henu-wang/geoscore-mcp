@@ -1,0 +1,37 @@
+{
+  "name": "geoscore-mcp",
+  "version": "2.0.0",
+  "description": "MCP server for GEOScore - AI search optimization scanner. Scan any website for AI search (GEO) readiness and get actionable recommendations.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "geoscore-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "geoscore",
+    "geo",
+    "seo",
+    "ai-search",
+    "model-context-protocol",
+    "claude",
+    "cursor"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
