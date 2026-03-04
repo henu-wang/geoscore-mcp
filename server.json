@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.henu-wang/geoscore-mcp",
+  "description": "Scan websites for AI search (GEO) readiness. Generate llms.txt, Schema.org, and meta fixes.",
+  "repository": {
+    "url": "https://github.com/henu-wang/geoscore-mcp",
+    "source": "github"
+  },
+  "version": "2.0.0",
+  "packages": [
+    {
+      "registryType": "github_release",
+      "identifier": "henu-wang/geoscore-mcp",
+      "version": "2.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "GEOScore API key for Pro features. Get one free at https://geoscoreai.com/api-keys",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "GEOSCORE_API_KEY"
+        }
+      ]
+    }
+  ]
+}
