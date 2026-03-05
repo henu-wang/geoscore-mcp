@@ -1,6 +1,12 @@
 # GEOScore MCP Server
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![MCP](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
+[![Website](https://img.shields.io/badge/Website-geoscoreai.com-10B981)](https://geoscoreai.com)
+
 An MCP server for [GEOScore](https://geoscoreai.com) - the AI search optimization platform. Scan any website for GEO (Generative Engine Optimization) readiness and get actionable fixes.
+
+> **GEO** = making your website visible to AI search engines like ChatGPT, Perplexity, Claude, and Gemini.
 
 ## What is GEO?
 
